@@ -5,7 +5,7 @@ trigger ContactBeforeInsertUpdate on Contact (before insert, before update) {
             cont.Description = 'Record created successfully by using ContactBeforeInsert trigger';
         }
         if(trigger.isUpdate){
-            cont.Description = 'Record updated successfully by '+ userInfo.getUserName() ;
+            cont.Description = 'Record updated successfully by Jas '+ userInfo.getUserName() ;
         }
         }
 // No Need to write DML statement, trigger. New will be take care.
